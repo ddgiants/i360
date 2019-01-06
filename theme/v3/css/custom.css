@@ -1,3 +1,206 @@
+.future-feature.tag-box.tag-box-v1.tag-box-p10.box-shadow.shadow-effect-1.margin-bottom-10 {
+    /* border-top: none; */
+    border: solid 1px #eee;
+}
+
+.col-md-2.social a {
+    color: #dadada;
+    padding: 5px;
+}
+
+.media, .media-body {
+    overflow: visible;
+}
+
+.media-body a {
+  color: #555;
+}
+
+
+.channel-business .headline {
+  border-bottom: 2px solid #00ab54;
+}
+
+.channel-business .headline h2,.channel-business .headline h4 {
+  color: #00ab54;
+  border-bottom: 2px solid #00ab54;
+}
+.headline.headline-business h4,.headline.headline-business h2 {
+  color: #00ab54;
+  border-bottom: 2px solid #00ab54;
+}
+.headline.headline-business {
+  border-bottom: 2px solid #00ab54;
+}
+
+.channel-federalit .headline h2 {
+  color: #f2682a;
+  border-bottom: 2px solid #f2682a;
+}
+
+.channel-statelocal .headline h2 {
+  color: #89441e;
+  border-bottom: 2px solid #89441e;
+}
+
+.channel-defense .headline h2 {
+  color: #193768;
+  border-bottom: 2px solid #193768;
+}
+
+.channel-healthcare .headline h2 {
+  color: #458bca;
+  border-bottom: 2px solid #458bca;
+}
+
+.channel-energy .headline h2 {
+  color: #fec52e;
+  border-bottom: 2px solid #fec52e;
+}
+
+.btn.btn-join-login.btn-business {
+  border: 3px solid #00ab54;
+  color: #00ab54;
+}
+.btn.btn-join-login.btn-business:hover {
+  background-color: #00ab54;
+}
+
+.channel-education .headline h2 {
+  color: #715192;
+  border-bottom: 2px solid #715192;
+}
+
+
+
+
+.channel-business #ContentScroller .carousel-inner .item .content-type {
+  background-color: #00ab54;
+  width: 100%;
+}
+
+.channel-federalit #ContentScroller .carousel-inner .item .content-type {
+  background-color: #f2682a;
+  width: 100%;
+}
+
+.channel-statelocal #ContentScroller .carousel-inner .item .content-type {
+  background-color: #89441e;
+  width: 100%;
+}
+
+.channel-defense #ContentScroller .carousel-inner .item .content-type {
+  background-color: #193768;
+  width: 100%;
+}
+
+.channel-healt#ContentScroller .care #ContentScroller .carousel-inner .item .content-type {
+  background-color: #458bca;
+  width: 100%;
+}
+
+.channel-energy #ContentScroller .carousel-inner .item .content-type {
+  background-color: #fec52e;
+  width: 100%;
+}
+
+.channel-education #ContentScroller .carousel-inner .item .content-type {
+  background-color: #715192;
+  width: 100%;
+}
+
+
+
+
+.download-now {
+	text-decoration: underline;
+	color: #54585a;
+}
+
+.download-div {
+	margin-bottom: 0px;
+}
+
+.future-feature h2>a {
+  color: #54585a !important;
+}
+
+.future-feature .btn-danger {
+  background-color: #54585a !important;
+}
+
+
+
+.magazine-sb-categories .col-xs-6 {
+	padding-left: 0px;
+}
+
+
+
+.btn-join-login:last-child {
+    float: right;
+}
+
+.btn-danger.btn-danger-business {
+  background-color: #00ab54!important;
+  border: 1px solid #00ab54!important;
+}
+
+.tag-box-newsletter {
+  border: 3px solid #e22726;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.tag-box-newsletter p,.tag-box-newsletter a {
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.tag-box-newsletter-business h2 {
+  background: #00ab54!important;
+}
+.tag-box-newsletter-business {
+  border: 3px solid #00ab54;
+}
+
+
+.tag-box-newsletter h2{
+  width: 100%;
+  background: #e22726;
+  color: white;
+  margin: 0px;
+  padding: 5px 10px;
+}
+
+
+
+.btn-join-login {
+    width: 165px;
+    height: 56px;
+    border: 3px solid #e22726;
+    padding-top: 6px;
+    font-size: 24px;
+}
+
+
+@media (max-width: 991px) {
+  .btn-join-login {
+    width: 135px;
+  }
+}
+
+
+a.btn.btn-join-login:hover {
+    background-color: #e22726;
+}
+
+.btn-tag-box {
+    background: #fff;
+    margin-bottom: 30px;
+}
+
 body {
 	font-size: 14px;
 }
@@ -16,6 +219,11 @@ body {
 
 .form-group > label {
 	vertical-align: top;
+}
+
+
+.form-control {
+	border: 1px solid gray;
 }
 
 #leaderboard {
@@ -47,11 +255,11 @@ body {
 .header-v4 .navbar-brand {
 	margin: 0;
 	padding: 0;
-	height: 95px;
+	height: 107px;
 }
 
 .header-v4 .navbar-default .navbar-nav > li > a {
-	padding: 10px 15px 11px;	
+	padding: 5px 15px 5px;
 }
 
 .header-v4 .navbar.i360nav .navbar-collapse.navbar-plain .navbar-nav {
@@ -94,8 +302,7 @@ body {
 	}
 
 	.header-v4 .navbar-default .navbar-plain .navbar-nav > li > a {
-		font-size: 12px;
-		font-weight: bold;
+		font-size: 17px;
 		padding: 5px 15px;
 	}
 
@@ -140,7 +347,8 @@ ul.i360-link-block {
 }
 
 ul.i360-link-block li {
-	color: #d81921;
+/*DD*/
+	color: black;
 }
 
 ul.i360-link-block li small {
@@ -155,6 +363,60 @@ ul.i360-link-block li a {
 hr.devider {
 	margin: 15px 0;
 }
+
+.interior-headline {
+	background: #e22726;
+	color: white;
+	border: none!important;
+	padding: 5px 10px;
+}
+.headline.interior-headline h4 {
+        color: white;
+	padding-top: 2px;
+}
+
+.headline.policy-business {
+	border-bottom: 2px solid #00ab54;
+}
+.headline.information-technology {
+	border-bottom: 2px solid #f2682a;
+}
+.headline.state-local {
+	border-bottom: 2px solid #89441e;
+}
+.headline.defense-intelligence {
+	border-bottom: 2px solid #193768;
+}
+.headline.healthcare-policy {
+	border-bottom: 2px solid #458bca;
+}
+.headline.energy-policy {
+	border-bottom: 2px solid #fec52e;
+}
+
+
+
+
+.headline.policy-business .i360-analysis-link {
+	color: #00ab54;
+}
+.headline.information-technology .i360-analysis-link {
+	color: #f2682a;
+}
+.headline.state-local .i360-analysis-link {
+	color: #89441e;
+}
+.headline.defense-intelligence .i360-analysis-link {
+	color: #193768;
+}
+.headline.healthcare-policy .i360-analysis-link {
+	color: #458bca;
+}
+.headline.energy-policy .i360-analysis-link {
+	color: #fec52e;
+}
+
+
 
 a.i360-analysis-link,
 a.i360-analysis-link:hover,
@@ -340,19 +602,35 @@ ul.dlc-details > li > i {
 #ContentScroller .carousel-control.left, #ContentScroller .carousel-control.right { background-image: none; }
 #ContentScroller .item a { color: #fff; }
 #ContentScroller .item a:hover { color: #fccd03; }
-#ContentScroller .carousel-caption { left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); padding: 5px 8%; text-align: left; }
+#ContentScroller .carousel-caption {
+	left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);
+/*DD padding: 5px 8%;*/
+padding: 5px 2%;
+text-align: left;
+text-transform: uppercase;
+
+}
 #ContentScroller .carousel-caption h3 { font-size: 18px; color: #ccc; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
 #ContentScroller .carousel-caption h3 small { font-size: 15px; color: #ccc; }
 #ContentScroller .carousel-caption p { font-size: 14px; color: #ccc; display: none; }
 #ContentScroller .carousel-caption:hover p { font-size: 14px; color: #ccc; display: block; }
-#ContentScroller .content-type { font-size: 16px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); position: absolute; right: 0; top: 0; background-color: rgba(0, 0, 0, 0.25); padding: 5px 15px; text-align: right; z-index: 10;}
+#ContentScroller .content-type {
+/*DD*/
+width: 100%;
+background: #e22726;
+font-size:
+16px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); position: absolute; right: 0; top: 0;
+text-transform: uppercase;
+
+/*DD background-color: rgba(0, 0, 0, 0.25)*/; padding: 5px 15px; text-align: right; z-index: 10;}
 
 .navbar.i360nav {
 	background-color: #d81921;
 }
 
 .navbar.i360nav .navbar-collapse.navbar-plain {
-	background-color: #fccd03;
+	/*DD background-color: #fccd03;*/
+	background-color: #54585a;
 }
 
 .navbar.i360nav .navbar-collapse.navbar-plain ul {
@@ -360,7 +638,8 @@ ul.dlc-details > li > i {
 }
 
 .navbar.i360nav .navbar-collapse.navbar-plain ul > li > a {
-	color: #333;
+	/*DD color: #333;*/
+	color: #ffffff;
 }
 
 .navbar.i360nav .navbar-collapse.navbar-plain ul > li:hover > a {
@@ -376,7 +655,7 @@ ul.dlc-details > li > i {
 }
 
 .header-v4 .navbar.i360nav .navbar-toggle,
-.header-v4 .navbar.i360nav .navbar-default .navbar-toggle:hover, 
+.header-v4 .navbar.i360nav .navbar-default .navbar-toggle:hover,
 .header-v4 .navbar.i360nav .navbar-default .navbar-toggle:focus {
 	background-color: #fccd03;
 	border: none;
@@ -397,6 +676,12 @@ ul.dlc-details > li > i {
 	border-color: #bd292d !important;
 }
 
+.panel-body .btn-danger {
+	background-color: #54585a !important;
+	border-color: #54585a !important;
+	text-transform: uppercase;
+}
+
 .btn-danger:hover {
 	background-color: #c9302c !important;
 	border-color: #ac2925 !important;
@@ -404,11 +689,17 @@ ul.dlc-details > li > i {
 }
 
 .panel-red {
-	border-color: #d81921;
+	border-color: #54585a;
 }
 
 .panel-red > .panel-heading {
-	background-color: #d81921;
+	/*DD background-color: #d81921;*/
+	background-color: #54585a;
+
+}
+
+.panel-title {
+	text-transform: uppercase;
 }
 
 .navbar.i360nav .social-icons {
@@ -417,9 +708,10 @@ ul.dlc-details > li > i {
 }
 
 .navbar.i360nav > .container {
-	background-image: url('../img/headers/header_bg.png');
+    /*DDbackground-image: url('../img/headers/header_bg.png');*/
     background-repeat: no-repeat;
-    background-position: right center; 	
+    background-position: right center;
+    background-color: white;
 }
 
 .yamm .yamm-content {
@@ -435,21 +727,43 @@ ul.dlc-details > li > i {
 }
 
 .headline {
-	border-bottom: 2px solid #d81921;
+	/*DD border-bottom: 2px solid #d81921;*/
+	border-bottom: 2px solid #e22726;
+	text-transform: uppercase;
 }
 
 .headline h2,
 .headline h3,
 .headline h4 {
 	border-bottom-color: transparent;
+	color: #e22726;
+}
+
+.col-md-2.social-top {
+  float: right;
+  margin-right: 15px;
+  padding-top: 4px;
+}
+
+.col-md-2.social-top a {
+    color: #54585a;
+    float: right;
+    margin-right: 5px;
+}
+
+.col-md-2.social {
+    height: 60px;
+    line-height: 6;
 }
 
 .footer-default .headline {
-	border-bottom: 2px solid #fccd03;
+	/*DD border-bottom: 2px solid #fccd03;*/
+	border-bottom: none;
 }
 
 .footer-default .copyright a {
-	color: #fccd03 !important;
+	/*DD color: #fccd03 !important;*/
+	color: white !important;
 }
 
 .footer-default .copyright a:hover,
@@ -480,7 +794,7 @@ ul.dlc-details.special-reports li {
 	background-repeat: no-repeat;
 	background-position: 0px top;
 	padding-left: 40px;
-}	
+}
 
 ul.events-list {
 	list-style-type: none;
@@ -538,4 +852,162 @@ h3.event-title small {
 
 span.message.required {
         color: #f00;
+}
+
+.i360Business {
+	background-color: #00ab54;
+
+}
+
+
+.i360FederalIT {
+  background-color: #f2682a;
+}
+
+
+.i360StateLocal {
+  background-color: #89441e;
+}
+
+
+.i360Defense {
+  background-color: #193768;
+}
+
+
+.i360Healtcare {
+  background-color: #458bca;
+}
+
+
+.i360Energy {
+	background-color: #fec52e;
+}
+
+
+.i360Education {
+  background-color: #6f538f;
+}
+
+
+.border-i360Business {
+	border: 3px solid #00ab54;
+}
+
+
+.border-i360FederalIT {
+	border: 3px solid #f2682a;
+}
+
+
+.border-i360StateLocal {
+	border: 3px solid #89441e;
+}
+
+
+.border-i360Defense {
+	border: 3px solid #193768;
+}
+
+
+.border-i360Healtcare {
+	border: 3px solid #458bca;
+}
+
+
+.border-i360Energy {
+	border: 3px solid #fec52e;
+}
+
+
+.border-i360Education {
+	border: 3px solid #6f538f;
+}
+
+
+.border-i360Gov {
+	border: 3px solid : #e22726;
+}
+
+.border-i360Business {
+  color: #00ab54;
+}
+
+
+.border-i360FederalIT {
+  color: #f2682a;
+}
+
+
+.border-i360StateLocal {
+  color: #89441e;
+}
+
+
+.border-i360Defense {
+  color: #193768;
+}
+
+
+.border-i360Healtcare {
+  color: #458bca;
+}
+
+
+.border-i360Energy {
+  color: #fec52e;
+}
+
+
+.border-i360Education {
+  color: #6f538f;
+}
+
+
+.border-i360Gov {
+  color: : #e22726;
+}
+
+
+.i360-header-logo {
+	max-height: 85px;
+}
+
+.border-i360Business {
+	border-bottom: 2px solid #00ab54;
+}
+
+
+.border-i360FederalIT {
+	border-bottom: 2px solid #f2682a;
+}
+
+
+.border-i360StateLocal {
+	border-bottom: 2px solid #89441e;
+}
+
+
+.border-i360Defense {
+	border-bottom: 2px solid #193768;
+}
+
+
+.border-i360Healtcare {
+	border-bottom: 2px solid #458bca;
+}
+
+
+.border-i360Energy {
+	border-bottom: 2px solid #fec52e;
+}
+
+
+.border-i360Education {
+	border-bottom: 2px solid #6f538f;
+}
+
+
+.border-i360Gov {
+	border-bottom: 2px solid : #e22726;
 }

@@ -1,3 +1,29 @@
+<% if 'business' in Channel.HeaderImage %>
+<% set department = 'Business' %>
+
+<% elif 'government-technology' in Channel.HeaderImage %>
+<% set department = 'FederalIT' %>
+
+<% elif 'local-government' in Channel.HeaderImage %>
+<% set department = 'StateLocal' %>
+
+<% elif 'us-military' in Channel.HeaderImage %>
+<% set department = 'Defense' %>
+
+<% elif 'government-health' in Channel.HeaderImage %>
+<% set department = 'Healtcare' %>
+
+<% elif 'government-energy' in Channel.HeaderImage %>
+<% set department = 'Energy' %>
+
+<% elif 'education-news' in Channel.HeaderImage %>
+<% set department = 'Education' %>
+
+<% else %>
+<% set department = 'Gov' %>
+
+<% endif %>
+
 <div class="row hidden-xs">
 	<div class="col-sm-12">
 		<div id="ContentScroller" class="carousel slide">
@@ -31,7 +57,7 @@
 							<% end_if %>
 							$Content
 						</div>
-						<div class="content-type">
+						<div class="content-type {{ department }}">
 							<% if ItemType == Webcast %>$WebcastType <% end_if %>$ItemType
 						</div>
 					</div>

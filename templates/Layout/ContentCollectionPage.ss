@@ -18,35 +18,37 @@
 <!--=== End Breadcrumbs ===-->
 
 <% if 'business' in Channel.HeaderImage %>
-<% set channelClass = 'business' %>
+<% set department = 'Business' %>
 
 <% elif 'government-technology' in Channel.HeaderImage %>
-<% set channelClass = 'federalit' %>
+<% set department = 'FederalIT' %>
 
 <% elif 'local-government' in Channel.HeaderImage %>
-<% set channelClass = 'statelocal' %>
+<% set department = 'StateLocal' %>
 
 <% elif 'us-military' in Channel.HeaderImage %>
-<% set channelClass = 'defense' %>
+<% set department = 'Defense' %>
 
 <% elif 'government-health' in Channel.HeaderImage %>
-<% set channelClass = 'healthcare' %>
+<% set department = 'Healtcare' %>
 
 <% elif 'government-energy' in Channel.HeaderImage %>
-<% set channelClass = 'energy' %>
+<% set department = 'Energy' %>
 
 <% elif 'education-news' in Channel.HeaderImage %>
-<% set channelClass = 'education' %>
+<% set department = 'Education' %>
 
 <% else %>
-<% set channelClass = 'home' %>
+<% set department = 'Gov' %>
 
 <% endif %>
+
+<% set department = 'i360' + department %>
 
 <!--=== Content Part ===-->
 <div class="container content">
     <div class="row">
-    	<div class="<% if ShowSidebar %>col-md-8 channel-{{ channelClass }}<% else %>col-md-12 channel-{{ channelClass }}<% end_if %>">
+    	<div class="<% if ShowSidebar %>col-md-8 {{ department }}<% else %>col-md-12 {{ department }}<% end_if %>">
 
             <% if ShowScroller %>
             <% include ContentScroller %>
@@ -55,7 +57,7 @@
             <div class="row">
                 <% if ShowTopStories %>
 
-                <div class="col-sm-5 channel-{{ channelClass }}">
+                <div class="col-sm-5 {{ department }}">
                     <% cached ArticleCache.TopStoriesKey %>
                     $ArticleCache.TopStories
                     <% end_cached %>
@@ -64,9 +66,9 @@
                 <% else %>
                 <div class="col-md-12">
                 <% end_if %>
-                    <div class="magazine-sb-categories margin-bottom-20 clearfix channel-{{ channelClass }}">
-                        <div class="headline headline-md">
-                            <h2>Whitepapers &amp; Special Reports</h2>
+                    <div class="magazine-sb-categories margin-bottom-20 clearfix {{ department }}">
+                        <div class="headline headline-md border-bottom-{{ department }}">
+                            <h2 class="color-{{ department }}">Whitepapers &amp; Special Reports</h2>
                         </div>
                         <div class="row">
                             <% cached 'ReadThisWhitepapers', Aggregate(Whitepaper).Max(LastEdited) %>
@@ -88,6 +90,43 @@
                             <% end_if %>
                             <% end_control %>
                             <% end_cached %>
+
+                            <!--DD added -->
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="margin-bottom-20">
+                                        <div class="btn-tag-box tag-box-p10">
+                                            <a href="http://www.i360gov.com/profile/" class="btn btn-join-login  color-{{  department }} border-{{ department }}">JOIN</a>
+                                            <a href="http://www.i360gov.com/Security/login" class="btn btn-join-login  color-{{  department }} border-{{ department }}">LOGIN</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="margin-bottom-20">
+                                        <div class="tag-box tag-box-newsletter tag-box-p10">
+                                            <h2 class="{{ department }}">i360 GOV NEWSLETTERS</h2>
+                                            <p>The most significant government policy, business, and technology news and analysis delivered to your inbox.</p>
+                                            <a href="http://www.i360gov.com/profile/" class="btn btn-danger border-{{ department }} {{ department }}">SUBSCRIBE NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="SidebarAd" class="row margin-bottom-20 text-center">
+                            <div id="google_ads_div_i360Gov_Rectangle_336x280_ad_wrapper">
+                              <div id="google_ads_div_i360Gov_Rectangle_336x280_ad_container" style="display:inline-block;">
+                                <img src="https://tpc.googlesyndication.com/simgad/2329224896309617500">
+                              </div>
+                            </div>
+                            </div>
+
+                            <!--End DD -->
+
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -98,14 +137,14 @@
 
     <% if ShowAnalysis && AnalysisChannels %>
     <div class="row">
-        <div class="col-md-12 magazine-sb-categories margin-bottom-20 clearfix channel-{{ channelClass }}">
+        <div class="col-md-12 magazine-sb-categories margin-bottom-20 clearfix {{ department }}">
             <div class="headline headline-md">
                 <h2>More News &amp; Analysis</h2>
             </div>
             <div class="margin-bottom-20">
                 $Content
             </div>
-            
+
             <div class="row">
                 <% control AnalysisChannels %>
                 <% cached ArticleCache.AnalysisKey %>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
     <title>$Title &raquo; $SiteConfig.Title</title>
     <% base_tag %>
@@ -46,7 +46,7 @@
     <script src="mysite/thirdparty/plugins/respond.js"></script>
     <script src="mysite/thirdparty/plugins/html5shiv.js"></script>
     <![endif]-->
-</head> 
+</head>
 
 <body class="boxed-layout container">
 
@@ -59,7 +59,7 @@
 <% end_if %>
 
 <div class="wrapper">
-    <!--=== Header ===-->    
+    <!--=== Header ===-->
     <div class="header-v4">
         <!-- Topbar -->
         <div class="topbar-v1">
@@ -117,38 +117,37 @@
                         <div class="col-md-12">
                             <% if Channel %>
                             <a class="navbar-brand hidden-xs" href="$Channel.Link">
-                                <img src="{$ThemeDir}/img/headers/header-default.png" alt="$HomePage.Title.ATT" title="$HomePage.Title.ATT" />
 
 
 <% if 'business' in Channel.HeaderImage %>
-<% set dd-header-title = 'business' %>
+<% set department = 'Business' %>
 
 <% elif 'government-technology' in Channel.HeaderImage %>
-<% set dd-header-title = 'federal it' %>
+<% set department = 'FederalIT' %>
 
 <% elif 'local-government' in Channel.HeaderImage %>
-<% set dd-header-title = 'state & local' %>
+<% set department = 'StateLocal' %>
 
 <% elif 'us-military' in Channel.HeaderImage %>
-<% set dd-header-title = 'defense' %>
+<% set department = 'Defense' %>
 
 <% elif 'government-health' in Channel.HeaderImage %>
-<% set dd-header-title = 'healthcare' %>
+<% set department = 'Healtcare' %>
 
 <% elif 'government-energy' in Channel.HeaderImage %>
-<% set dd-header-title = 'energy' %>
+<% set department = 'Energy' %>
 
 <% elif 'education-news' in Channel.HeaderImage %>
-<% set dd-header-title = 'education' %>
+<% set department = 'Education' %>
 
 <% else %>
-<% set dd-header-title = 'gov' %>
+<% set department = 'Gov' %>
 
 <% endif %>
 
-<span class="header-channel">{{ dd-header-title }}</span>
+<% set department = 'i360' + department %>
 
-
+<img class="i360-header-logo" src="{$ThemeDir}/img/headers/{{ department }}_Logo_RGB_Small.jpg" alt="$HomePage.Title.ATT" title="$HomePage.Title.ATT" />
 
 
 
@@ -166,7 +165,7 @@
                             </a>
                             <% end_if %>
                         </div>
-                    </div>    
+                    </div>
 
 
 <div class="right_nav">
@@ -186,13 +185,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-                        </span>    
+                        </span>
                     </button>
                 </div>
-            </div>    
+            </div>
 
             <div class="clearfix"></div>
-            
+
             <div class="collapse navbar-collapse navbar-responsive-collapse navbar-plain">
                 <div class="container visible-md visible-lg">
                     <ul class="nav navbar-nav">
@@ -207,7 +206,7 @@
                         <li<% if Articles %> class="active"<% end_if %>><a href="/articles/archive/" title="View the article archive">Archive</a></li>
                     </ul>
 
-
+                    <!-- DD added -->
                     <ul class="nav navbar-nav navbar-border-bottom navbar-right">
                         <li class="no-border">
                             <div class="search-open">
@@ -222,7 +221,7 @@
                             </div>
                         </li>
                     </ul>
-
+                    <!-- DD end3 -->
 
 
 
@@ -306,20 +305,17 @@
                     </ul>
                     <% end_if %>
 
-
-
+                    <!-- DD added -->
+                    <div class="col-md-2 social-top">
+                                                <a href="http://www.facebook.com/pages/Raleigh-NC/i360Govcom/142203794714?ref=nf"><i class="fa fa-facebook-square fa-2x"></i></a>
+                                                <a href="http://www.i360gov.com/rss-feeds"><i class="fa fa-rss-square fa-2x"></i></a>
+                                                <a href="http://twitter.com/i360gov"><i class="fa fa-twitter-square fa-2x"></i></a>
+                                                <a href="http://www.linkedin.com/company/i360gov-inc."><i class="fa fa-linkedin-square fa-2x"></i></a>
+                  </div>
+                  <!-- DD end -->
 
                     <!-- Search Block -->
-                    <ul class="nav navbar-nav navbar-border-bottom navbar-right">
-                        <li class="no-border">
-                            <ul class="social-icons social-icons-color">
-                                <li><a href="http://www.facebook.com/pages/Raleigh-NC/i360Govcom/142203794714?ref=nf" data-original-title="Facebook" class="social_facebook"></a></li>
-                                <li><a href="http://twitter.com/i360gov" data-original-title="Twitter" class="social_twitter"></a></li>
-                                <li><a href="http://www.linkedin.com/company/i360gov%2Dinc%2E" data-original-title="Linkedin" class="social_linkedin"></a></li>
-                            </ul>
-                        </li>
 
-                    </ul>
                     <!-- End Search Block -->
                 </div>
             </div><!--/navbar-collapse-->
@@ -327,7 +323,7 @@
         <% end_cached %>
         <!-- End Navbar -->
     </div>
-    <!--=== End Header ===-->    
+    <!--=== End Header ===-->
 
     <!--=== Content Part ===-->
     $Layout
@@ -367,17 +363,17 @@
                                     important news and analysis regarding their agency strategies and initiatives.
                                     <% end_if %>
                                     <!-- End Social Links -->
-                                </p>    
+                                </p>
                                 <!-- End About -->
 
                                 <!-- Social Links -->
                             </div>
                         </div>
-                    </div><!--/col-md-4-->  
-                    
+                    </div><!--/col-md-4-->
+
                     <div class="col-sm-6 col-md-3 md-margin-bottom-40">
                         <!-- Contact Us -->
-                        <div class="headline"><h2>Contact Us</h2></div> 
+                        <div class="headline"><h2>Contact Us</h2></div>
                         <p class="md-margin-bottom-40">
                             Telephone: 202.760.2280<br />
                             Toll Free: 855.i360.Gov<br />
@@ -404,13 +400,13 @@
                                     <li><a href="http://twitter.com/i360gov" data-original-title="Twitter" class="social_twitter"></a></li>
                                     <li><a href="http://www.linkedin.com/company/i360gov-inc." data-original-title="Linkedin" class="social_linkedin"></a></li>
                                 </ul>
-            </div> 
+            </div>
            </div>
         </div><!--/footer-->
         <div class="copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-10">                   
+                    <div class="col-sm-10">
                         <p>
                             Copyright &copy; 2009-$Now.Format(Y) i360Gov, Inc.
                             <br class="tiny" />
@@ -427,14 +423,14 @@
                             <% end_control %>
                         </p>
                     </div>
-                    <div class="col-sm-2 hidden-xs">  
+                    <div class="col-sm-2 hidden-xs">
                         <a href="$BaseHref">
                             <img class="pull-right" id="logo-footer" src="{$ThemeDir}/img/i360_logo_small_dblinv.png" alt="">
                         </a>
                     </div>
                 </div>
-            </div> 
-        </div><!--/copyright--> 
+            </div>
+        </div><!--/copyright-->
     </div>
     <!--=== End Footer ===-->
 
@@ -444,4 +440,4 @@
 <% require javascript(themes/v3/js/app.js) %>
 <script type="text/javascript"></script>
 </body>
-</html> 
+</html>

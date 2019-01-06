@@ -9,7 +9,7 @@
 }
 
 .media, .media-body {
-    overflow: visible; 
+    overflow: visible;
 }
 
 .media-body a {
@@ -173,7 +173,7 @@
   margin: 0px;
   padding: 5px 10px;
 }
-  
+
 
 
 .btn-join-login {
@@ -259,7 +259,7 @@ body {
 }
 
 .header-v4 .navbar-default .navbar-nav > li > a {
-	padding: 5px 15px 5px;	
+	padding: 5px 15px 5px;
 }
 
 .header-v4 .navbar.i360nav .navbar-collapse.navbar-plain .navbar-nav {
@@ -602,11 +602,11 @@ ul.dlc-details > li > i {
 #ContentScroller .carousel-control.left, #ContentScroller .carousel-control.right { background-image: none; }
 #ContentScroller .item a { color: #fff; }
 #ContentScroller .item a:hover { color: #fccd03; }
-#ContentScroller .carousel-caption { 
-	left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); 
+#ContentScroller .carousel-caption {
+	left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5);
 /*DD padding: 5px 8%;*/
 padding: 5px 2%;
-text-align: left; 
+text-align: left;
 text-transform: uppercase;
 
 }
@@ -614,12 +614,12 @@ text-transform: uppercase;
 #ContentScroller .carousel-caption h3 small { font-size: 15px; color: #ccc; }
 #ContentScroller .carousel-caption p { font-size: 14px; color: #ccc; display: none; }
 #ContentScroller .carousel-caption:hover p { font-size: 14px; color: #ccc; display: block; }
-#ContentScroller .content-type { 
+#ContentScroller .content-type {
 /*DD*/
 width: 100%;
 background: #e22726;
-font-size: 
-16px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); position: absolute; right: 0; top: 0; 
+font-size:
+16px; color: #fff; text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8); position: absolute; right: 0; top: 0;
 text-transform: uppercase;
 
 /*DD background-color: rgba(0, 0, 0, 0.25)*/; padding: 5px 15px; text-align: right; z-index: 10;}
@@ -655,7 +655,7 @@ text-transform: uppercase;
 }
 
 .header-v4 .navbar.i360nav .navbar-toggle,
-.header-v4 .navbar.i360nav .navbar-default .navbar-toggle:hover, 
+.header-v4 .navbar.i360nav .navbar-default .navbar-toggle:hover,
 .header-v4 .navbar.i360nav .navbar-default .navbar-toggle:focus {
 	background-color: #fccd03;
 	border: none;
@@ -710,7 +710,7 @@ text-transform: uppercase;
 .navbar.i360nav > .container {
     /*DDbackground-image: url('../img/headers/header_bg.png');*/
     background-repeat: no-repeat;
-    background-position: right center; 	
+    background-position: right center;
     background-color: white;
 }
 
@@ -794,7 +794,7 @@ ul.dlc-details.special-reports li {
 	background-repeat: no-repeat;
 	background-position: 0px top;
 	padding-left: 40px;
-}	
+}
 
 ul.events-list {
 	list-style-type: none;
@@ -852,4 +852,162 @@ h3.event-title small {
 
 span.message.required {
         color: #f00;
+}
+
+.i360Business {
+	background-color: #00ab54;
+
+}
+
+
+.i360FederalIT {
+  background-color: #f2682a;
+}
+
+
+.i360StateLocal {
+  background-color: #89441e;
+}
+
+
+.i360Defense {
+  background-color: #193768;
+}
+
+
+.i360Healtcare {
+  background-color: #458bca;
+}
+
+
+.i360Energy {
+	background-color: #fec52e;
+}
+
+
+.i360Education {
+  background-color: #6f538f;
+}
+
+
+.border-i360Business {
+	border: 3px solid #00ab54;
+}
+
+
+.border-i360FederalIT {
+	border: 3px solid #f2682a;
+}
+
+
+.border-i360StateLocal {
+	border: 3px solid #89441e;
+}
+
+
+.border-i360Defense {
+	border: 3px solid #193768;
+}
+
+
+.border-i360Healtcare {
+	border: 3px solid #458bca;
+}
+
+
+.border-i360Energy {
+	border: 3px solid #fec52e;
+}
+
+
+.border-i360Education {
+	border: 3px solid #6f538f;
+}
+
+
+.border-i360Gov {
+	border: 3px solid : #e22726;
+}
+
+.border-i360Business {
+  color: #00ab54;
+}
+
+
+.border-i360FederalIT {
+  color: #f2682a;
+}
+
+
+.border-i360StateLocal {
+  color: #89441e;
+}
+
+
+.border-i360Defense {
+  color: #193768;
+}
+
+
+.border-i360Healtcare {
+  color: #458bca;
+}
+
+
+.border-i360Energy {
+  color: #fec52e;
+}
+
+
+.border-i360Education {
+  color: #6f538f;
+}
+
+
+.border-i360Gov {
+  color: : #e22726;
+}
+
+
+.i360-header-logo {
+	max-height: 85px;
+}
+
+.border-i360Business {
+	border-bottom: 2px solid #00ab54;
+}
+
+
+.border-i360FederalIT {
+	border-bottom: 2px solid #f2682a;
+}
+
+
+.border-i360StateLocal {
+	border-bottom: 2px solid #89441e;
+}
+
+
+.border-i360Defense {
+	border-bottom: 2px solid #193768;
+}
+
+
+.border-i360Healtcare {
+	border-bottom: 2px solid #458bca;
+}
+
+
+.border-i360Energy {
+	border-bottom: 2px solid #fec52e;
+}
+
+
+.border-i360Education {
+	border-bottom: 2px solid #6f538f;
+}
+
+
+.border-i360Gov {
+	border-bottom: 2px solid : #e22726;
 }
