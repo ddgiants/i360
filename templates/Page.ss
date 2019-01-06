@@ -112,7 +112,7 @@
         <div class="navbar navbar-default yamm mega-menu i360nav" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
+                <div class="navbar-header border-{{ department }}">
                     <div class="row">
                         <div class="col-md-12">
                             <% if Channel %>
