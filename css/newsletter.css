@@ -1,0 +1,26 @@
+body {
+	background: #687F8F url(../../../mysite/images/newsletter_page_bg.png) repeat-x;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+div.legacy {
+	width: 700px;
+	padding: 5px;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+
+.cmscontent ul {
+  margin: 1em 0;
+  padding-left: 2em;
+  list-style-type: disc;
+}
+
+.specialmessage p {
+  margin-top: 1em;
+}
+
